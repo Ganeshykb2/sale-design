@@ -1,0 +1,196 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'League Spartan', sans-serif;
+}
+h1{
+    margin:0px;
+    padding:0px;
+}
+p{
+    margin:0px;
+    padding:0px;
+}
+sub{
+    margin:0px;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width:70vw;
+    height:83vh;
+    gap:2vw;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-basis:22vw;
+    border-radius: 17px;
+    gap:1vh;
+}
+#first{
+    box-shadow:10px 10px 30px rgba(129,4,65,1);
+}
+#second{
+    box-shadow:2px 2px 40px rgba(4,76,129,1);
+}
+#third{
+    box-shadow:6px 6px 30px rgba(3,35,50,1) ;
+}
+.bheight{
+    display:flex;
+    flex-basis: 20vh;
+    flex-shrink:0;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#money{
+    font-size: 4em;
+    font-weight: bolder;
+}
+#dolor{
+    font-size:4em;
+    font-weight: 800;
+}
+.heading>p{
+    text-align:center;
+    margin-top:10px;
+    color:white;
+    padding:0px 5px;
+}
+.heading>h1{
+    color:white;
+    margin-bottom: 5px;
+}
+.rate>span{
+    margin-bottom: 8px;
+}
+.rate>hr{
+    width: 10vw;
+    height: 3px;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 0;
+    border: none;
+} 
+hr{
+    width: 15em;
+    height: 3px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px 7px;
+    border: none;
+}
+#first .heading{
+    border:none;
+    border-radius: 15px 15px 0px 0px;
+    background: rgb(229,240,88);
+    background: linear-gradient(153deg, rgba(229,240,88,1) 0%, rgba(236,152,61,1) 15%, rgba(160,29,253,1) 81%, rgba(129,4,65,1) 100%);
+}
+#second .heading{
+    border:none;
+    border-radius: 15px 15px 0px 0px;
+    background: rgb(73,246,251);
+    background: linear-gradient(153deg, rgba(73,246,251,1) 1%, rgba(50,168,186,1) 32%, rgba(39,94,112,1) 69%, rgba(4,76,129,1) 93%);
+}
+#third .heading{
+    border:none;
+    border-radius: 15px 15px 0px 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(153deg, rgba(255,255,255,1) 1%, rgba(111,200,240,1) 20%, rgba(49,144,186,1) 45%, rgba(3,35,50,1) 100%);
+}
+.description{
+    height: 23vh !important;
+}
+.description ul{
+    list-style: none;
+    padding: 0;
+  }
+
+.description ul li{
+    position: relative;
+    padding-left: 34px; /* Adjust the padding as needed */
+    margin-top:5px;
+    line-height: 1.2;
+  }
+
+#first>.description li::before {
+    content: '\2713'; /* Unicode character for a checkmark */
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(153deg, rgba(229,240,88,1) 0%, rgba(236,152,61,1) 15%, rgba(160,29,253,1) 81%, rgba(129,4,65,1) 100%);
+    border-radius: 50%;
+    color: white; 
+    font-size: 16px; 
+}
+#second>.description li::before {
+    content: '\2713';
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(153deg, rgba(73,246,251,1) 1%, rgba(50,168,186,1) 32%, rgba(39,94,112,1) 69%, rgba(4,76,129,1) 93%);
+    border-radius: 50%;
+    color: white; 
+    font-size: 16px; 
+}
+#third>.description li::before {
+    content: '\2713';
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(153deg, rgba(255,255,255,1) 1%, rgba(111,200,240,1) 20%, rgba(49,144,186,1) 45%, rgba(3,35,50,1) 100%);
+    border-radius: 50%;
+    color: white; 
+    font-size: 16px; 
+}
+#first .buynow button{
+    color:white;
+    font-size: 16px;
+    padding:4px 8px;
+    background:linear-gradient(153deg, rgba(229,240,88,1) 0%, rgba(236,152,61,1) 15%, rgba(160,29,253,1) 81%, rgba(129,4,65,1) 100%);
+    border-radius: 5px;
+    border:none;
+}
+#second .buynow button{
+    color:white;
+    font-size: 16px;
+    padding:4px 8px;
+    background:linear-gradient(153deg, rgba(73,246,251,1) 1%, rgba(50,168,186,1) 32%, rgba(39,94,112,1) 69%, rgba(4,76,129,1) 93%);
+    border-radius: 5px;
+    border:none;
+}
+#third .buynow button{
+    color:white;
+    font-size: 16px;
+    padding:4px 8px;
+    background:linear-gradient(153deg, rgba(255,255,255,1) 1%, rgba(111,200,240,1) 20%, rgba(49,144,186,1) 45%, rgba(3,35,50,1) 100%);
+    border-radius: 5px;
+    border:none;
+}
